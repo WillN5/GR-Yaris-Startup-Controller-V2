@@ -58,7 +58,7 @@ void setup() {
     pinMode(INPUT_MODE, INPUT);
 
     // Delay to allow car screens to load fully (large delay not necessary for function)
-    delay(14000);
+    delay(3000);
 
     // Read states of inputs
     bool STATE_ESC = digitalRead(INPUT_ESC);    // HIGH for expert (short), LOW for ESC fully off (long)
@@ -71,7 +71,7 @@ void setup() {
     delay(4000);
     digitalWrite(SWITCH_LDA, LOW);
     digitalWrite(LED_LDA, LOW);
-    delay(1000);
+    delay(500);
 
     // iMT
     digitalWrite(SWITCH_IMT, HIGH);
