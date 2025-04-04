@@ -19,8 +19,8 @@
 #define LED_ESC     18
 
 // Define input pins
-#define INPUT_ESC   5   // To determine ESC button press - short (expert), long (all off)
-#define INPUT_MODE  6   // To determine if track or sport is selected
+#define INPUT_ESC   5   // Input to determine ESC switch state - short (expert), long (all off)
+#define INPUT_MODE  6   // Input to determine track/sport switch state
 
 void setup() {
 
@@ -57,14 +57,11 @@ void setup() {
     pinMode(INPUT_ESC, INPUT);
     pinMode(INPUT_MODE, INPUT);
 
-    // LED startup light show
-    // startupLEDs();
-
     // Delay to allow car screens to load fully (large delay not necessary for function)
     delay(14000);
 
     // Read states of inputs
-    bool STATE_ESC = digitalRead(INPUT_ESC);    // HIGH for expert, LOW for ESC fully off
+    bool STATE_ESC = digitalRead(INPUT_ESC);    // HIGH for expert (short), LOW for ESC fully off (long)
     bool STATE_MODE = digitalRead(INPUT_MODE);  // HIGH for track, LOW for sport
 
     // Turn buttons on sequentially
@@ -123,24 +120,4 @@ void setup() {
 
 void loop() {
     // Nothing to do in loop
-}
-
-void startupLEDs(){
-    // Flash LEDs in a sequence to signify successful startup
-    for(int i=0;i<5;i++){
-        digitalWrite(LED_TRACK, HIGH);
-        digitalWrite(LED_SPORT, HIGH);
-        digitalWrite(LED_LDA, HIGH);
-        digitalWrite(LED_ASS, HIGH);
-        digitalWrite(LED_IMT, HIGH);
-        digitalWrite(LED_ESC, HIGH);
-        delay(100);
-        digitalWrite(LED_TRACK, LOW);
-        digitalWrite(LED_SPORT, LOW);
-        digitalWrite(LED_LDA, LOW);
-        digitalWrite(LED_ASS, LOW);
-        digitalWrite(LED_IMT, LOW);
-        digitalWrite(LED_ESC, LOW);
-        delay(100);
-    }
 }
