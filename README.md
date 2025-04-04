@@ -1,6 +1,6 @@
 # GR Yaris Startup Controller V2.0
 
-![alt text](https://github.com/WillN5/GR-Yaris-Startup-Controller-v2/tree/main/Pics/Controller-pic-1.jpeg)
+![alt text](https://github.com/WillN5/GR-Yaris-Startup-Controller-V2/blob/main/Pics/Controller-pic-1.jpeg)
 
 This device will automatically press any (or all) of the annoying buttons in a GR Yaris when you first start your car:
 * Lane Departure Alert (turn off)
