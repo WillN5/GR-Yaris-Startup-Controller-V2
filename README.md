@@ -11,6 +11,8 @@ This device will automatically press any (or all) of the annoying buttons in a G
 * Select Sport/Track mode
 * Turn ESC to expert mode, or switch ESC fully off
 
+The controller simply 'presses' the buttons upon first start up. Original button functionality remains unaffected.
+
 In this repository you will find:
 * [Overview & Installation Guide](https://github.com/WillN5/GR-Yaris-Startup-Controller-v2/tree/main/Docs)
 * [Car wiring information](https://github.com/WillN5/GR-Yaris-Startup-Controller-v2/tree/main/Docs)
