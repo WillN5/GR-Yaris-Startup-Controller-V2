@@ -14,9 +14,9 @@ This device will automatically press any (or all) of the annoying buttons in a G
 The controller simply presses the buttons (electronically) upon first start up. Original button functionality remains unaffected.
 
 In this repository you will find:
-* [Overview & Installation Guide](https://github.com/WillN5/GR-Yaris-Startup-Controller-v2/tree/main/Docs)
-* [Car Wiring Information](https://github.com/WillN5/GR-Yaris-Startup-Controller-v2/tree/main/Docs)
-* [Code](https://github.com/WillN5/GR-Yaris-Startup-Controller-v2/tree/main/Code)
+* [Overview & Installation Guide](https://github.com/WillN5/GR-Yaris-Startup-Controller-V2/blob/main/Docs/Overview%20%26%20Install%20Guide.pdf)
+* [Car Wiring Information](https://github.com/WillN5/GR-Yaris-Startup-Controller-V2/blob/main/Docs/Car%20Wiring%20Info.pdf)
+* [Code](https://github.com/WillN5/GR-Yaris-Startup-Controller-V2/blob/main/Code/Code_Startup_Controller_v2/Code_Startup_Controller_v2.ino)
 * [3D Case Files](https://github.com/WillN5/GR-Yaris-Startup-Controller-v2/tree/main/3D%20Files)
 * [Pictures](https://github.com/WillN5/GR-Yaris-Startup-Controller-v2/tree/main/Pics)
 
