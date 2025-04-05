@@ -64,7 +64,8 @@ void setup() {
     bool STATE_ESC = digitalRead(INPUT_ESC);    // HIGH for expert (short), LOW for ESC fully off (long)
     bool STATE_MODE = digitalRead(INPUT_MODE);  // HIGH for track, LOW for sport
 
-    // Turn buttons on sequentially
+    // Press buttons sequentially and turn on indicator LEDs
+
     // LDA
     digitalWrite(SWITCH_LDA, HIGH);
     digitalWrite(LED_LDA, HIGH);
@@ -91,6 +92,7 @@ void setup() {
 
     // Mode Select
     digitalWrite(SWITCH_MODE, HIGH);
+    // Depending on switch selection, turn on correct LED
     if(STATE_MODE){
         digitalWrite(LED_TRACK, HIGH);
     }else{
@@ -102,10 +104,11 @@ void setup() {
     digitalWrite(LED_SPORT, LOW);
     delay(1000);
 
-    // ESC
+    // ESC (must be pressed after sport/track mode is selected)
     digitalWrite(SWITCH_ESC, HIGH);
     digitalWrite(LED_ESC, HIGH);
     delay(500);
+    // Depending on switch selection, press button for short or long time
     if(STATE_ESC){
         // If true, short press for expert mode
         digitalWrite(SWITCH_ESC, LOW);
