@@ -18,7 +18,7 @@ In this repository you will find:
 * [Car wiring information](https://github.com/WillN5/GR-Yaris-Startup-Controller-v2/tree/main/Docs)
 * [PCB schematic](https://github.com/WillN5/GR-Yaris-Startup-Controller-v2/tree/main/PCB)
 * [Code](https://github.com/WillN5/GR-Yaris-Startup-Controller-v2/tree/main/Code)
-* [3D files for the case](https://github.com/WillN5/GR-Yaris-Startup-Controller-v2/tree/main/Housing)
+* [3D Case Files](https://github.com/WillN5/GR-Yaris-Startup-Controller-v2/tree/main/3D%20Files)
 * [Pictures](https://github.com/WillN5/GR-Yaris-Startup-Controller-v2/tree/main/Pics)
 
 Credit for idea goes to MagnusT and his original post here:<br/>
