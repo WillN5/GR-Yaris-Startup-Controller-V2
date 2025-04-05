@@ -15,8 +15,7 @@ The controller simply presses the buttons (electronically) upon first start up. 
 
 In this repository you will find:
 * [Overview & Installation Guide](https://github.com/WillN5/GR-Yaris-Startup-Controller-v2/tree/main/Docs)
-* [Car wiring information](https://github.com/WillN5/GR-Yaris-Startup-Controller-v2/tree/main/Docs)
-* [PCB schematic](https://github.com/WillN5/GR-Yaris-Startup-Controller-v2/tree/main/PCB)
+* [Car Wiring Information](https://github.com/WillN5/GR-Yaris-Startup-Controller-v2/tree/main/Docs)
 * [Code](https://github.com/WillN5/GR-Yaris-Startup-Controller-v2/tree/main/Code)
 * [3D Case Files](https://github.com/WillN5/GR-Yaris-Startup-Controller-v2/tree/main/3D%20Files)
 * [Pictures](https://github.com/WillN5/GR-Yaris-Startup-Controller-v2/tree/main/Pics)
