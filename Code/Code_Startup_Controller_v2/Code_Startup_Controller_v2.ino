@@ -1,6 +1,6 @@
+// GR Yaris Startup Controller
 // Will Norman
 // April 2025
-// GR Yaris Startup Controller
 // For use with PCB v2.0
 
 // Define all output pins that drive car button presses
@@ -91,7 +91,7 @@ void setup() {
     // Auto stop/start off
     digitalWrite(SWITCH_ASS, LOW);
     digitalWrite(LED_ASS, LOW);
-    delay(1000);
+    delay(500);
 
     // Mode select
     // Turn appropriate LED on
