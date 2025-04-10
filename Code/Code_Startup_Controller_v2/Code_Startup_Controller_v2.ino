@@ -57,9 +57,9 @@ void setup() {
     pinMode(INPUT_ESC, INPUT);
     pinMode(INPUT_MODE, INPUT);
 
-    // Delay 6s to allow car to startup
-    delay(6000);
-
+    // Delay 3s to allow car to startup
+    delay(3000);
+    
     // Read states of inputs
     bool STATE_ESC = digitalRead(INPUT_ESC);    // HIGH for expert (short press), LOW for ESC fully off (long press)
     bool STATE_MODE = digitalRead(INPUT_MODE);  // HIGH for track, LOW for sport
@@ -78,7 +78,7 @@ void setup() {
     // iMT on
     digitalWrite(SWITCH_IMT, HIGH);
     digitalWrite(LED_IMT, HIGH);
-    delay(1000);
+    delay(500);
     // iMT off
     digitalWrite(SWITCH_IMT, LOW);
     digitalWrite(LED_IMT, LOW);
