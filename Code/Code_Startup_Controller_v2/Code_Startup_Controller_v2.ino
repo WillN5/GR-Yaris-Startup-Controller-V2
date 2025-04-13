@@ -57,8 +57,8 @@ void setup() {
     pinMode(INPUT_ESC, INPUT);
     pinMode(INPUT_MODE, INPUT);
 
-    // Delay 3s to allow car to startup
-    delay(3000);
+    // Delay 5s to allow car to startup
+    delay(5000);
     
     // Read states of inputs
     bool STATE_ESC = digitalRead(INPUT_ESC);    // HIGH for expert (short press), LOW for ESC fully off (long press)
