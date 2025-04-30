@@ -93,6 +93,7 @@ void setup() {
     digitalWrite(LED_ASS, LOW);
     delay(500);
 
+
     // Mode select
     // Turn appropriate LED on
     if(STATE_MODE){
