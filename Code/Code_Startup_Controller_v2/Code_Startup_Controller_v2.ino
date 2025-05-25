@@ -1,7 +1,8 @@
 // GR Yaris Startup Controller
 // Will Norman
-// April 2025
+// May 2025
 // For use with PCB v2.0
+// Code updates for ABRE
 
 // Define all output pins that drive car button presses
 #define SWITCH_MODE 10   // sport / track (slide switch determines which chassis signal wire is pulled low)
@@ -57,8 +58,8 @@ void setup() {
     pinMode(INPUT_ESC, INPUT);
     pinMode(INPUT_MODE, INPUT);
 
-    // Delay 3s to allow car to startup
-    delay(3000);
+    // Delay 10s to allow car to startup
+    delay(10000); // increased from 3s
     
     // Read states of inputs
     bool STATE_ESC = digitalRead(INPUT_ESC);    // HIGH for expert (short press), LOW for ESC fully off (long press)
@@ -75,15 +76,6 @@ void setup() {
     digitalWrite(LED_LDA, LOW);
     delay(500);
 
-    // iMT on
-    digitalWrite(SWITCH_IMT, HIGH);
-    digitalWrite(LED_IMT, HIGH);
-    delay(500);
-    // iMT off
-    digitalWrite(SWITCH_IMT, LOW);
-    digitalWrite(LED_IMT, LOW);
-    delay(500);
-
     // Auto stop/start on
     digitalWrite(SWITCH_ASS, HIGH);
     digitalWrite(LED_ASS, HIGH);
@@ -92,7 +84,6 @@ void setup() {
     digitalWrite(SWITCH_ASS, LOW);
     digitalWrite(LED_ASS, LOW);
     delay(500);
-
 
     // Mode select
     // Turn appropriate LED on
@@ -128,6 +119,15 @@ void setup() {
         digitalWrite(SWITCH_ESC, LOW);
         digitalWrite(LED_ESC, LOW);
     }
+
+    // iMT on (now last in queue)
+    digitalWrite(SWITCH_IMT, HIGH);
+    digitalWrite(LED_IMT, HIGH);
+    delay(500);
+    // iMT off
+    digitalWrite(SWITCH_IMT, LOW);
+    digitalWrite(LED_IMT, LOW);
+    delay(500);
 }
 
 void loop() {
