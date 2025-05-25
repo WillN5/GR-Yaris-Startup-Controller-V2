@@ -119,6 +119,7 @@ void setup() {
         digitalWrite(SWITCH_ESC, LOW);
         digitalWrite(LED_ESC, LOW);
     }
+    delay(500);
 
     // iMT on (now last in queue)
     digitalWrite(SWITCH_IMT, HIGH);
@@ -127,7 +128,6 @@ void setup() {
     // iMT off
     digitalWrite(SWITCH_IMT, LOW);
     digitalWrite(LED_IMT, LOW);
-    delay(500);
 }
 
 void loop() {
